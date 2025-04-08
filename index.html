@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendBuzz - Your Source for Trending Content</title>
+    <meta name="description" content="Discover the latest trending topics, news, and viral content from around the world. Updated hourly with fresh content!">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Schema.org markup for better SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TrendBuzz",
+        "url": "https://yourusername.github.io/trendbuzz/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://yourusername.github.io/trendbuzz/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="TrendBuzz - Your Source for Trending Content">
+    <meta property="og:description" content="Discover the latest trending topics, news, and viral content from around the world. Updated hourly with fresh content!">
+    <meta property="og:image" content="https://yourusername.github.io/trendbuzz/images/trendbuzz-logo.png">
+    <meta property="og:url" content="https://yourusername.github.io/trendbuzz/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TrendBuzz - Your Source for Trending Content">
+    <meta name="twitter:description" content="Discover the latest trending topics, news, and viral content from around the world. Updated hourly with fresh content!">
+    <meta name="twitter:image" content="https://yourusername.github.io/trendbuzz/images/trendbuzz-logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TrendBuzz</h1>
+                <p class="tagline">Trending Now, Every Hour</p>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" data-category="technology">Technology</a></li>
+                    <li><a href="#" data-category="entertainment">Entertainment</a></li>
+                    <li><a href="#" data-category="health">Health</a></li>
+                    <li><a href="#" data-category="sports">Sports</a></li>
+                    <li><a href="#" data-category="business">Business</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Trending Right Now</h2>
+                <p>Stay updated with the most viral stories from around the world</p>
+                <div class="trending-tags">
+                    <span class="tag">#TrendingNow</span>
+                    <span class="tag">#MustRead</span>
+                    <span class="tag">#GoingViral</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner - Top -->
+    <div class="ad-container">
+        <div class="container">
+            <div class="ad-banner" id="ad-top">
+                <div class="ad-placeholder">
+                    <!-- AdSense code will go here -->
+                    <p class="ad-text">Advertisement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="featured-content">
+        <div class="container">
+            <h2 class="section-title">Featured Stories</h2>
+            <div class="featured-grid" id="featured-content">
+                <!-- Content will be dynamically loaded here -->
+                <div class="content-placeholder">Loading trending content...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner - Middle -->
+    <div class="ad-container">
+        <div class="container">
+            <div class="ad-banner" id="ad-middle">
+                <div class="ad-placeholder">
+                    <!-- AdSense code will go here -->
+                    <p class="ad-text">Advertisement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="category-section">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="technology">Technology</button>
+                <button class="tab-btn" data-category="entertainment">Entertainment</button>
+                <button class="tab-btn" data-category="health">Health</button>
+                <button class="tab-btn" data-category="sports">Sports</button>
+                <button class="tab-btn" data-category="business">Business</button>
+            </div>
+            <div class="category-content" id="category-content">
+                <!-- Category content will be dynamically loaded here -->
+                <div class="content-placeholder">Select a category to see trending content</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Never Miss a Trend!</h2>
+                <p>Subscribe to our newsletter and get the hottest stories delivered to your inbox daily.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="privacy-note">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner - Bottom -->
+    <div class="ad-container">
+        <div class="container">
+            <div class="ad-banner" id="ad-bottom">
+                <div class="ad-placeholder">
+                    <!-- AdSense code will go here -->
+                    <p class="ad-text">Advertisement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="trending-now">
+        <div class="container">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="trending-grid" id="trending-content">
+                <!-- Trending content will be dynamically loaded here -->
+                <div class="content-placeholder">Loading trending content...</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TrendBuzz</h2>
+                    <p>Your source for trending content</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#" data-category="technology">Technology</a></li>
+                        <li><a href="#" data-category="entertainment">Entertainment</a></li>
+                        <li><a href="#" data-category="health">Health</a></li>
+                        <li><a href="#" data-category="sports">Sports</a></li>
+                        <li><a href="#" data-category="business">Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> TrendBuzz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script src="js/ads.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+name: Update Website Content
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install rss-parser
+        
+      - name: Fetch latest content
+        run: node scripts/fetch-content.js
+        
+      - name: Commit and push if content changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update content: $(date)" && git push)
